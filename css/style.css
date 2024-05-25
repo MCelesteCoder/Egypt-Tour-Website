@@ -5,6 +5,11 @@
     scroll-behavior: smooth;
 }
 
+:root {
+    --light: #eeb971;
+    --dark: #d49d5c;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -162,7 +167,7 @@ header::after {
 
 .container-header {
     margin: 0;
-    background: #eeb971;
+    background: var(--light);
     padding: 100px 20px 0;
     width: 100%;
 }
@@ -200,7 +205,7 @@ header::after {
 .cont-extra {
     padding: 0;
     margin: 0;
-    background: #d49d5c;
+    background: var(--dark);
     display: flex;
     justify-content: center;
     height: 262px;
@@ -213,13 +218,13 @@ header::after {
 }
 
 .extra {
-    color: #eeb971;
+    color: var(--light);
     font-size: 35vh;
     font-family: 'Kanit', sans-serif;
 }
 
 .cont-section {
-    background: #d49d5c;
+    background: var(--dark);
     padding: 130px 120px 0;
     flex-wrap: wrap;
 }
@@ -292,15 +297,11 @@ header::after {
 }
 
 .cont-show-more {
-    width: 100%;
-    display: flex;
-    justify-content: center;
     padding: 60px;
-
 }
 
 .show-more:hover {
-    color: #d49d5c;
+    color: var(--dark);
     background: #000;
     font-weight: bold;
 }
@@ -308,7 +309,7 @@ header::after {
 /*GALLERY*/
 
 .galleria {
-    background: #eeb971;
+    background: var(--light);
 }
 
 .titles-cont {
@@ -354,7 +355,7 @@ header::after {
 /*Sponsors*/
 
 .title {
-    background: #eeb971;
+    background: var(--light);
     text-align: center;
     padding: 150px 120px 0;
 }
@@ -411,10 +412,14 @@ header::after {
 }
 
 .cont-book-now {
+    padding: 40px;
+}
+
+.cont-book-now a, .cont-show-more a{
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 40px;
+    text-decoration: none;
 }
 
 /*Button's*/
@@ -432,14 +437,14 @@ header::after {
 }
 
 .book-now:hover {
-    color: #d49d5c;
+    color: var(--dark);
     background: #000;
     font-weight: bold;
 }
 
 /*FOOTER*/
 footer {
-    background: #eeb971;
+    background: var(--light);
     padding-bottom: 0.1px;
 }
 
@@ -496,7 +501,7 @@ footer {
 }
 
 .social-media-icon:hover {
-    color: #d49d5c;
+    color: var(--dark);
     background: #000;
     font-weight: bold;
 }
