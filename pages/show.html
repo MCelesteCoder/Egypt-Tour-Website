@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,60 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:wght@900&family=Open+Sans:wght@300;400;700&family=Playfair+Display&family=Raleway:ital,wght@1,100&display=swap"
         rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    
-    <section class="container-fluid">
-    </section>
 
+    <header>
+        <section class="container-header">
+            <a href="./" class="back">
+                <i class='bx bxs-chevrons-left'></i>
+            </a>
+        </section>
+    </header>
 
+    <main>
+        <section class="container-xxl cont-1">
+            <div class="cont-img">
+                <img src="img/1.jpg" alt="" class="img-things">
+            </div>
+            <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                    aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                    aria-controls="multiCollapseExample2">Toggle second element</button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+                    aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both
+                    elements</button>
+            </p>
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            Some placeholder content for the first collapse component of this multi-collapse example.
+                            This
+                            panel is hidden by default but revealed when the user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                            Some placeholder content for the second collapse component of this multi-collapse example.
+                            This
+                            panel is hidden by default but revealed when the user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <img src="img/idea.png" alt="">
+    </footer>
 
 
 
@@ -25,4 +72,5 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
